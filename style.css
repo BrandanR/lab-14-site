@@ -1,8 +1,13 @@
 /* universal properties */
 body, html {
   height: 100%;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  color: white;
 }
-
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Major Mono Display", monospace;
+}
 /* style the hero-image div */
 .hero-image {
   background-image: url("fauci.v01.jpg");
@@ -37,25 +42,59 @@ div.stuff {
   padding: 5px;
 }
 div#first {
-background-color: #B0ABB8 ;
+background-color: #F2EFEB ;
 }
 
-}
+
 div#second {
-background-color: #75382E ;
+  background-color: #594336;
 }
 
-}
+
 div#third {
-background-color: #A6654E ;
+  background-color: #260A03;
 }
 
-}
+
 div#fourth {
-background-color: #D99982 ;
+  background-color: #BF7969;
 }
 
-}
+
 div#fifth {
-background-color: #6E6561 ;  
+  background-color: #BF6060;
+}
+
+/* style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #31283E;
+
+}
+
+#navbar a {
+  float: left;
+  diplay: block;
+  color: #f2f2f2;
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+  padding: 14px
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: hotpink;
+  background-color: white;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
